@@ -1,0 +1,186 @@
+[
+  {
+    "question": "What are two expected features of modern enterprise networks? (Choose two.)",
+    "answers": [
+      "support for converged network traffic",
+      "support for critical applications"
+    ]
+  },
+  {
+    "question": "Which type of information is displayed by the show ip protocols command that is issued from a router command prompt?",
+    "answers": [
+      "the configured routing protocols and the networks that the router is advertising"
+    ]
+  },
+  {
+    "question": "Which action should be taken when planning for redundancy on a hierarchical network design?",
+    "answers": [
+      "add alternate physical paths for data to traverse the network"
+    ]
+  },
+  {
+    "question": "In the Cisco Enterprise Architecture, which two functional parts of the network are combined to form a collapsed core design? (Choose two.)",
+    "answers": [
+      "distribution layer",
+      "core layer"
+    ]
+  },
+  {
+    "question": "What are two ways to access a Cisco switch for out-of-band management? (Choose two.)",
+    "answers": [
+      "a connection that uses the AUX port",
+      "a connection that uses the console port"
+    ]
+  },
+  {
+    "question": "How can an enterprise network be designed to optimize bandwidth?",
+    "answers": [
+      "by organizing the network to control traffic patterns"
+    ]
+  },
+  {
+    "question": "Refer to the exhibit. Which devices exist in the failure domain when switch S3 loses power?",
+    "answers": [
+      "PC_3 and AP_2"
+    ]
+  },
+  {
+    "question": "As the network administrator you have been asked to implement EtherChannel on the corporate network. What does this configuration consist of?",
+    "answers": [
+      "grouping multiple physical ports to increase bandwidth between two switches"
+    ]
+  },
+  {
+    "question": "What term is used to express the thickness or height of a switch?",
+    "answers": [
+      "rack unit"
+    ]
+  },
+  {
+    "question": "What is the function of ASICs in a multilayer switch?",
+    "answers": [
+      "They streamline forwarding of IP packets in a multilayer switch by bypassing the CPU."
+    ]
+  },
+  {
+    "question": "Which design feature will limit the size of a failure domain in an enterprise network?",
+    "answers": [
+      "the use of the building switch block approach"
+    ]
+  },
+  {
+    "question": "A network administrator is planning redundant devices and cabling in a switched network to support high availability. Which benefit will implementing the Spanning Tree Protocol provide to this design?",
+    "answers": [
+      "Redundant paths can be available without causing logical Layer 2 loops."
+    ]
+  },
+  {
+    "question": "What are two benefits of extending access layer connectivity to users through a wireless medium? (Choose two.)",
+    "answers": [
+      "increased flexibility",
+      "reduced costs"
+    ]
+  },
+  {
+    "question": "Which two features of enterprise class equipment assists an enterprise network in maintaining 99.999 percent up-time? (Choose two.)",
+    "answers": [
+      "failover capabilities",
+      "redundant power supplies"
+    ]
+  },
+  {
+    "question": "A network technician needs to connect a PC to a Cisco network device for initial configuration. What is required to perform this device configuration?",
+    "answers": [
+      "terminal emulation client"
+    ]
+  },
+  {
+    "question": "What network design would contain the scope of disruptions on a network should a failure occur?",
+    "answers": [
+      "the deployment of distribution layer switches in pairs and the division of access layer switch connections between them"
+    ]
+  },
+  {
+    "question": "What are three access layer switch features that are considered when designing a network? (Choose three.)?",
+    "answers": [
+      "forwarding rate",
+      "Power over Ethernet",
+      "port density"
+    ]
+  },
+  {
+    "question": "What are two functions of a router? (Choose two.)",
+    "answers": [
+      "It connects multiple IP networks.",
+      "It determines the best path to send packets."
+    ]
+  },
+  {
+    "question": "What capability is provided by the use of application-specific integrated circuits in Cisco multilayer switches?",
+    "answers": [
+      "forwarding of IP packets independent of the CPU"
+    ]
+  },
+  {
+    "question": "Which statement describes a characteristic of Cisco Meraki switches?",
+    "answers": [
+      "They are cloud-managed access switches that enable virtual stacking of switches."
+    ]
+  },
+  {
+    "question": "A network engineer is reviewing a network design that uses a fixed configuration enterprise router that supports both LAN and WAN connections. However, the engineer realizes that the router does not have enough interfaces to support growth and network expansion. Which type of device should be used as a replacement?",
+    "answers": [
+      "a modular router"
+    ]
+  },
+  {
+    "question": "In which situation would a network administrator install a Cisco Nexus Series or Cisco Catalyst 6500 Series switch to promote infrastructure scalability?",
+    "answers": [
+      "on a data center network to provide expansion and transport flexibility"
+    ]
+  },
+  {
+    "question": "Which statement describes a characteristic of Cisco Catalyst 2960 switches?",
+    "answers": [
+      "New Cisco Catalyst 2960-C switches support PoE pass-through."
+    ]
+  },
+  {
+    "question": "Refer to the exhibit. Which command was issued on a Cisco switch that resulted in the exhibited output?",
+    "answers": [
+      "show port-security address"
+    ]
+  },
+  {
+    "question": "What is a characteristic of in-band device management?",
+    "answers": [
+      "It is used to monitor and make configuration changes to a network device over a network connection."
+    ]
+  },
+  {
+    "question": "Which two requirements must always be met to use in-band management to configure a network device? (Choose two.)",
+    "answers": [
+      "at least one network interface that is connected and operational",
+      "Telnet, SSH, or HTTP access to the device"
+    ]
+  },
+  {
+    "question": "When a Cisco IOS device is being selected or upgraded, which option indicates the capabilities of the Cisco IOS device?",
+    "answers": [
+      "feature set"
+    ]
+  },
+  {
+    "question": "Immediately after a router completes its boot sequence, the network administrator wants to check the routers configuration. From privileged EXEC mode, which of the following commands can the administrator use for this purpose? (Choose two.)",
+    "answers": [
+      "show startup-config",
+      "show running-config"
+    ]
+  },
+  {
+    "question": "What is the function of PoE pass-through?",
+    "answers": [
+      "allows switches, phones, and wireless access points to receive power over existing Ethernet cables from an upstream switch"
+    ]
+  }
+]

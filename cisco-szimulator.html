@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Cisco Secure Exam Engine v2.4 (Szimulátor)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #eceff1; padding: 20px; user-select: none; /* Nehezített kijelölés */ }
+        #exam-container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .exam-header { border-bottom: 2px solid #005073; padding-bottom: 10px; margin-bottom: 20px; color: #005073; }
+        
+        /* Trükkös vizsga struktúra stílusai */
+        .q-wrapper-x9j { margin-bottom: 30px; padding: 15px; border: 1px solid #e0e0e0; background: #fafafa; border-radius: 5px; }
+        .q-text-block { font-size: 16px; font-weight: bold; margin-bottom: 15px; color: #333; }
+        .opt-container { display: flex; flex-direction: column; gap: 8px; margin-left: 10px; }
+        .opt-row { display: flex; align-items: flex-start; padding: 8px; background: white; border: 1px solid #ddd; border-radius: 4px; }
+        .opt-row:hover { background-color: #f1f8ff; }
+        .opt-input-wrapper { margin-right: 12px; margin-top: 2px; }
+        .opt-text-content { font-size: 14px; color: #444; cursor: pointer; flex-grow: 1; }
+    </style>
+</head>
+<body>
+
+<div id="exam-container">
+    <h2 class="exam-header">CCNA Final Exam (Secure Environment)</h2>
+    <div id="questions-area"></div>
+</div>
+
+<script>
+    // A te listádból egy minta, hogy legeneráljuk az oldalt
+    const sourceData = [
+        { "question": "Which design feature will limit the size of a failure domain in an enterprise network?", "answers": ["the use of the building switch block approach"] },
+        { "question": "Which two things should a network administrator modify on a router to perform password recovery? (Choose two.)", "answers": ["the configuration register value", "the startup configuration file"] },
+        { "question": "What type of network uses one common infrastructure to carry voice, data, and video signals?", "answers": ["converged"] },
+        { "question": "What are three advantages of using private IP addresses and NAT? (Choose three.)", "answers": ["hides private LAN addressing from outside devices that are connected to the Internet", "permits LAN expansion without additional public IP addresses", "conserves registered public IP addresses"] },
+        { "question": "What is a characteristic of a single-area OSPF network?", "answers": ["All routers are in the backbone area."] },
+        { "question": "Which type of OSPF packet is used by a router to discover neighbor routers and establish neighbor adjacency?", "answers": ["hello"] }
+    ];
+
+    // Összes lehetséges válasz kigyűjtése a "kamu" opciókhoz
+    const allAnswers = sourceData.flatMap(item => item.answers);
+
+    const examArea = document.getElementById('questions-area');
+
+    sourceData.forEach((qItem, index) => {
+        // Hány választ kell bejelölni?
+        let isMulti = qItem.question.includes("Choose two") || qItem.question.includes("Choose three");
+        let inputType = isMulti ? "checkbox" : "radio";
+        
+        // Helyes válaszok + kamu válaszok keverése
+        let options = [...qItem.answers];
+        while (options.length < (isMulti ? 5 : 4)) {
+            let randomAns = allAnswers[Math.floor(Math.random() * allAnswers.length)];
+            if (!options.includes(randomAns)) options.push(randomAns);
+        }
+        
+        // Opciók összekeverése (shuffle)
+        options.sort(() => Math.random() - 0.5);
+
+        // Kérdés HTML generálása (nagyon trükkös DOM)
+        let qHTML = `
+            <div class="q-wrapper-x9j" id="question-${index}">
+                <div class="q-text-block">
+                    <span>${index + 1}.</span> <span>${qItem.question}</span>
+                </div>
+                <div class="opt-container">
+        `;
+
+        options.forEach((optText, optIndex) => {
+            qHTML += `
+                    <label class="opt-row">
+                        <div class="opt-input-wrapper">
+                            <input type="${inputType}" name="q_${index}">
+                        </div>
+                        <span class="opt-text-content">${optText}</span>
+                    </label>
+            `;
+        });
+
+        qHTML += `</div></div>`;
+        examArea.innerHTML += qHTML;
+    });
+</script>
+
+</body>
+</html>

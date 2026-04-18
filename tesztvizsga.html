@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>CCNA Teszt Vizsga</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f9f9f9; }
+        .question-block { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .question-title { font-weight: bold; font-size: 16px; margin-bottom: 15px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; padding: 8px; background: #f1f1f1; border-radius: 4px; cursor: pointer; transition: 0.2s; }
+        li:hover { background: #e1e1e1; }
+        input { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Vizsga Szimulátor (Teszt)</h2>
+    <p>Ha a bővítményed működik, a helyes válaszok alatt meg kell jelennie a halvány pöttyös vonalnak!</p>
+
+    <div class="question-block">
+        <div class="question-title">1. What is the primary purpose of a router in a network?</div>
+        <ul>
+            <li><label><input type="radio" name="q1"> To connect computers together in a local area network</label></li>
+            <li><label><input type="radio" name="q1"> To forward data packets between different computer networks</label></li>
+            <li><label><input type="radio" name="q1"> To provide wireless internet connection</label></li>
+            <li><label><input type="radio" name="q1"> To store website data</label></li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <div class="question-title">2. What are two advantages of EtherChannel? (Choose two.)</div>
+        <ul>
+            <li><label><input type="checkbox" name="q2"> It uses entirely unshielded twisted-pair cables.</label></li>
+            <li><label><input type="checkbox" name="q2"> Configuring the EtherChannel interface provides consistency in the configuration of the physical links.</label></li>
+            <li><label><input type="checkbox" name="q2"> It requires upgrading the physical ports to higher speeds.</label></li>
+            <li><label><input type="checkbox" name="q2"> Spanning Tree Protocol views the physical links in an EtherChannel as one logical connection.</label></li>
+            <li><label><input type="checkbox" name="q2"> It limits the bandwidth on a network.</label></li>
+        </ul>
+    </div>
+    <div class="question-block">
+        <div class="question-title">3. Which design feature will limit the size of a failure domain in an enterprise network?</div>
+        <ul>
+            <li><label><input type="radio" name="q3"> the use of the building switch block approach</label></li>
+            <li><label><input type="radio" name="q3"> the use of a three-tier hierarchical design</label></li>
+            <li><label><input type="radio" name="q3"> the use of a two-tier collapsed core design</label></li>
+            <li><label><input type="radio" name="q3"> the use of a single-tier flat design</label></li>
+        </ul>
+    </div>
+
+</body>
+</html>

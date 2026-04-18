@@ -1,0 +1,26 @@
+﻿{
+  "manifest_version": 3,
+  "name": "Super Stealth Helper (JSON)",
+  "version": "2.0",
+  "description": "Láthatatlan szövegkereső beépített helyi adatbázissal.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["answers.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
