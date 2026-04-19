@@ -277,7 +277,7 @@ document.addEventListener('keydown', (e) => {
             showStealthAnswer("Nincs találat");
         }
     }
-});
+}, true);
 
 
 // === 3. HELYI JSON ADATBÁZIS BETÖLTÉSE ===
@@ -489,7 +489,7 @@ document.addEventListener('mouseup', () => {
         // Letiltjuk a sima kijelölést a testben, csak a "stealth" formázást mutatja, ami nem változtat a háttéren.
         // Ez opcionális, a kijelölés színét már amúgy is felülírtuk a stílusok között.
     }
-});
+}, true);
 
 function highlightCorrectOptionsGlobal(correctAnswersArray) {
     // Végigmegyünk az összes olyan elemen globálisan, amibe válasz lehet írva (netacad.com specifikusan)

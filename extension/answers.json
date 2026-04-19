@@ -1,47 +1,57 @@
 [
   {
-    "question": "What are two expected features of modern enterprise networks? (Choose two.)",
+    "question": "What is the term used to indicate a variation of delay?",
     "answers": [
-      "support for converged network traffic",
-      "support for critical applications"
+      "jitter"
     ]
   },
   {
-    "question": "Which type of information is displayed by the show ip protocols command that is issued from a router command prompt?",
+    "question": "A network engineer performs a ping test and receives a value that shows the time it takes for a packet to travel from a source to a destination device and return. Which term describes the value?",
     "answers": [
-      "the configured routing protocols and the networks that the router is advertising"
+      "latency"
     ]
   },
   {
-    "question": "Which action should be taken when planning for redundancy on a hierarchical network design?",
+    "question": "What role do network devices play in the IntServ QoS model?",
     "answers": [
-      "add alternate physical paths for data to traverse the network"
+      "Network devices ensure that resources are available before traffic is allowed to be sent by a host through the network."
     ]
   },
   {
-    "question": "In the Cisco Enterprise Architecture, which two functional parts of the network are combined to form a collapsed core design? (Choose two.)",
+    "question": "Which device would be classified as a trusted endpoint?",
     "answers": [
-      "distribution layer",
-      "core layer"
+      "IP phone"
     ]
   },
   {
-    "question": "What are two ways to access a Cisco switch for out-of-band management? (Choose two.)",
+    "question": "What is the benefit of deploying Layer 3 QoS marking across an enterprise network?",
     "answers": [
-      "a connection that uses the AUX port",
-      "a connection that uses the console port"
+      "Layer 3 marking can carry the QoS information end-to-end."
     ]
   },
   {
-    "question": "How can an enterprise network be designed to optimize bandwidth?",
+    "question": "What is the function of a QoS trust boundary?",
     "answers": [
-      "by organizing the network to control traffic patterns"
+      "A trust boundary identifies which devices trust the marking on packets that enter a network."
     ]
   },
   {
-    "question": "Refer to the exhibit. Which devices exist in the failure domain when switch S3 loses power?",
+    "question": "What are two approaches to prevent packet loss due to congestion on an interface? (Choose two.)",
     "answers": [
-      "PC_3 and AP_2"
+      "Drop lower-priority packets.",
+      "Increase link capacity."
+    ]
+  },
+  {
+    "question": "What configuration scenario would offer the most protection to SNMP get and set messages?",
+    "answers": [
+      "SNMPv3 configured with the auth security level"
+    ]
+  },
+  {
+    "question": "The command ntp server 10.1.1.1 is issued on a router. What impact does this command have?",
+    "answers": [
+      "synchronizes the system clock with the time source with IP address 10.1.1.1"
     ]
   },
   {
@@ -51,27 +61,87 @@
     ]
   },
   {
-    "question": "What term is used to express the thickness or height of a switch?",
+    "question": "What is a definition of a two-tier LAN network design?",
     "answers": [
-      "rack unit"
+      "distribution and core layers collapsed into one tier, and the access layer on a separate tier"
     ]
   },
   {
-    "question": "What is the function of ASICs in a multilayer switch?",
+    "question": "What are two reasons to create a network baseline? (Choose two.)",
     "answers": [
-      "They streamline forwarding of IP packets in a multilayer switch by bypassing the CPU."
+      "",
+      ""
     ]
   },
   {
-    "question": "Which design feature will limit the size of a failure domain in an enterprise network?",
+    "question": "A computer can access devices on the same network but cannot access devices on other networks. What is the probable cause of this problem?",
     "answers": [
-      "the use of the building switch block approach"
+      "The computer has an invalid default gateway address."
     ]
   },
   {
-    "question": "A network administrator is planning redundant devices and cabling in a switched network to support high availability. Which benefit will implementing the Spanning Tree Protocol provide to this design?",
+    "question": "In which step of gathering symptoms does the network engineer determine if the problem is at the core, distribution, or access layer of the network?",
     "answers": [
-      "Redundant paths can be available without causing logical Layer 2 loops."
+      "Narrow the scope."
+    ]
+  },
+  {
+    "question": "A network administrator is deploying QoS with the ability to provide a special queue for voice traffic so that voice traffic is forwarded before network traffic in other queues. Which queuing method would be the best choice?",
+    "answers": [
+      "LLQ"
+    ]
+  },
+  {
+    "question": "What are two characteristics of voice traffic? (Choose two.)",
+    "answers": [
+      "Voice traffic latency should not exceed 150 ms.",
+      "Dropped voice packets are not retransmitted."
+    ]
+  },
+  {
+    "question": "Which type of network traffic cannot be managed using congestion avoidance tools?",
+    "answers": [
+      "UDP"
+    ]
+  },
+  {
+    "question": "When QoS is implemented in a converged network, which two factors can be controlled to improve network performance for real-time traffic? (Choose two.)",
+    "answers": [
+      "delay",
+      "jitter"
+    ]
+  },
+  {
+    "question": "An administrator wants to replace the configuration file on a Cisco router by loading a new configuration file from a TFTP server. What two things does the administrator need to know before performing this task? (Choose two.)",
+    "answers": [
+      "name of the configuration file that is stored on the TFTP server",
+      "TFTP server IP address"
+    ]
+  },
+  {
+    "question": "What are three functions provided by the syslog service? (Choose three.)",
+    "answers": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "question": "What is the function of the MIB element as part of a network management system?",
+    "answers": [
+      "to store data about a device"
+    ]
+  },
+  {
+    "question": "What network design would contain the scope of disruptions on a network should a failure occur?",
+    "answers": [
+      "the deployment of distribution layer switches in pairs and the division of access layer switch connections between them"
+    ]
+  },
+  {
+    "question": "Which action should be taken when planning for redundancy on a hierarchical network design?",
+    "answers": [
+      "add alternate physical paths for data to traverse the network"
     ]
   },
   {
@@ -82,105 +152,186 @@
     ]
   },
   {
-    "question": "Which two features of enterprise class equipment assists an enterprise network in maintaining 99.999 percent up-time? (Choose two.)",
+    "question": "What is a basic function of the Cisco Borderless Architecture access layer?",
     "answers": [
-      "failover capabilities",
-      "redundant power supplies"
+      "provides access to the user"
     ]
   },
   {
-    "question": "A network technician needs to connect a PC to a Cisco network device for initial configuration. What is required to perform this device configuration?",
+    "question": "Which characteristic would most influence a network design engineer to select a multilayer switch over a Layer 2 switch?",
     "answers": [
-      "terminal emulation client"
+      "ability to build a routing table"
     ]
   },
   {
-    "question": "What network design would contain the scope of disruptions on a network should a failure occur?",
+    "question": "When is the most appropriate time to measure network operations to establish a network performance baseline?",
     "answers": [
-      "the deployment of distribution layer switches in pairs and the division of access layer switch connections between them"
+      "at the same time each day across a set period of average working days, so that typical traffic patterns can be established"
     ]
   },
   {
-    "question": "What are three access layer switch features that are considered when designing a network? (Choose three.)?",
+    "question": "What type of traffic is described as requiring latency to be no more than 150 milliseconds (ms)?",
     "answers": [
-      "forwarding rate",
-      "Power over Ethernet",
-      "port density"
+      "voice"
     ]
   },
   {
-    "question": "What are two functions of a router? (Choose two.)",
+    "question": "A network manager wants to add a time to log messages so that there is record of when the message was generated. What command should the administrator use on a Cisco router?",
     "answers": [
-      "It connects multiple IP networks.",
-      "It determines the best path to send packets."
+      "service timestamps log datetime"
     ]
   },
   {
-    "question": "What capability is provided by the use of application-specific integrated circuits in Cisco multilayer switches?",
+    "question": "What are two characteristics of the best-effort QoS model? (Choose two.)",
     "answers": [
-      "forwarding of IP packets independent of the CPU"
+      "It does not provide a delivery guarantee for packets.",
+      "It treats all network packets in the same way."
     ]
   },
   {
-    "question": "Which statement describes a characteristic of Cisco Meraki switches?",
+    "question": "Why is QoS an important issue in a converged network that combines voice, video, and data communications?",
     "answers": [
-      "They are cloud-managed access switches that enable virtual stacking of switches."
+      "Voice and video communications are more sensitive to latency."
     ]
   },
   {
-    "question": "A network engineer is reviewing a network design that uses a fixed configuration enterprise router that supports both LAN and WAN connections. However, the engineer realizes that the router does not have enough interfaces to support growth and network expansion. Which type of device should be used as a replacement?",
+    "question": "Which statement describes SNMP operation?",
     "answers": [
-      "a modular router"
+      "A set request is used by the NMS to change configuration variables in the agent device."
     ]
   },
   {
-    "question": "In which situation would a network administrator install a Cisco Nexus Series or Cisco Catalyst 6500 Series switch to promote infrastructure scalability?",
+    "question": "What are the three layers of the switch hierarchical design model? (Choose three.)",
     "answers": [
-      "on a data center network to provide expansion and transport flexibility"
+      "",
+      "",
+      ""
     ]
   },
   {
-    "question": "Which statement describes a characteristic of Cisco Catalyst 2960 switches?",
+    "question": "A network designer is considering whether to implement a switch block on the company network. What is the primary advantage of deploying a switch block?",
     "answers": [
-      "New Cisco Catalyst 2960-C switches support PoE pass-through."
+      "The failure of a switch block will not impact all end users."
     ]
   },
   {
-    "question": "Refer to the exhibit. Which command was issued on a Cisco switch that resulted in the exhibited output?",
+    "question": "Which troubleshooting tool would a network administrator use to check the Layer 2 header of frames that are leaving a particular host?",
     "answers": [
-      "show port-security address"
+      "protocol analyzer"
     ]
   },
   {
-    "question": "What is a characteristic of in-band device management?",
+    "question": "What type of traffic is described as not resilient to loss?",
     "answers": [
-      "It is used to monitor and make configuration changes to a network device over a network connection."
+      "video"
     ]
   },
   {
-    "question": "Which two requirements must always be met to use in-band management to configure a network device? (Choose two.)",
+    "question": "A network manager wants lists the contents of flash. What command should the administrator use on a Cisco router?",
     "answers": [
-      "at least one network interface that is connected and operational",
-      "Telnet, SSH, or HTTP access to the device"
+      "dir"
     ]
   },
   {
-    "question": "When a Cisco IOS device is being selected or upgraded, which option indicates the capabilities of the Cisco IOS device?",
+    "question": "Voice packets are being received in a continuous stream by an IP phone, but because of network congestion the delay between each packet varies and is causing broken conversations. What term describes the cause of this condition?",
     "answers": [
-      "feature set"
+      "jitter"
     ]
   },
   {
-    "question": "Immediately after a router completes its boot sequence, the network administrator wants to check the routers configuration. From privileged EXEC mode, which of the following commands can the administrator use for this purpose? (Choose two.)",
+    "question": "A user is unable to reach the website when typing http://www.cisco.com in a web browser, but can reach the same site by typing http://72.163.4.161. What is the issue?",
     "answers": [
-      "show startup-config",
-      "show running-config"
+      "DNS"
     ]
   },
   {
-    "question": "What is the function of PoE pass-through?",
+    "question": "What type of traffic is described as tending to be unpredictable, inconsistent, and bursty?",
     "answers": [
-      "allows switches, phones, and wireless access points to receive power over existing Ethernet cables from an upstream switch"
+      "Video"
+    ]
+  },
+  {
+    "question": "A network manager wants to determine the size of the Cisco IOS image file on the networking device. What command should the administrator use on a Cisco router?",
+    "answers": [
+      "show flash:0"
+    ]
+  },
+  {
+    "question": "What is the principle that is applied when a network technician is troubleshooting a network fault by using the divide-and-conquer method?",
+    "answers": [
+      "Once it is verified that components in a particular layer are functioning properly, it can then be assumed that components in the layers below it are also functional."
+    ]
+  },
+  {
+    "question": "Which queuing algorithm has only a single queue and treats all packets equally?",
+    "answers": [
+      "FIFO"
+    ]
+  },
+  {
+    "question": "What type of traffic is described as traffic that requires at least 30 Kbps of bandwidth?",
+    "answers": [
+      "voice"
+    ]
+  },
+  {
+    "question": "What type of traffic is described as being able to tolerate a certain amount of latency, jitter, and loss without any noticeable effects?",
+    "answers": [
+      "voice"
+    ]
+  },
+  {
+    "question": "A network manager wants to view the amount of available and free memory, the type of file system, and its permissions. What command should the administrator use on a Cisco router?",
+    "answers": [
+      "show file systems"
+    ]
+  },
+  {
+    "question": "What type of traffic is described as requiring latency to be no more than 400 milliseconds (ms)?",
+    "answers": [
+      "video"
+    ]
+  },
+  {
+    "question": "What type of traffic is described as consisting of traffic that requires a higher priority if interactive?",
+    "answers": [
+      "data"
+    ]
+  },
+  {
+    "question": "A network manager wants to configure the router to load a new image from flash during bootup. What command should the administrator use on a Cisco router?",
+    "answers": [
+      "boot system"
+    ]
+  },
+  {
+    "question": "What type of traffic is described as predictable and smooth?",
+    "answers": [
+      "voice"
+    ]
+  },
+  {
+    "question": "A network manager wants to ensure that the device will ignore the startup config file during startup and bypass the required passwords. What command should the administrator use on a Cisco router?",
+    "answers": [
+      "confreg 0x2142"
+    ]
+  },
+  {
+    "question": "What type of traffic is described as having a high volume of data per packet?",
+    "answers": [
+      "video"
+    ]
+  },
+  {
+    "question": "A network manager wants to backup the running configuration to a file server. What command should the administrator use on a Cisco router?",
+    "answers": [
+      "copy running-config tftp"
+    ]
+  },
+  {
+    "question": "What type of traffic is described as consisting of traffic that gets a lower priority if it is not mission-critical?",
+    "answers": [
+      "data"
     ]
   }
 ]
