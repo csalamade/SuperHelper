@@ -1,0 +1,292 @@
+[
+  {
+    "question": "A company uses a cloud-based payroll system. Which cloud computing technology is this company using?",
+    "answers": [
+      "software as a service (SaaS)"
+    ]
+  },
+  {
+    "question": "For a data center, what is the difference in the server virtualization data traffic compared with the traditional client-server model?",
+    "answers": [
+      "There are significant data exchanges between virtual servers."
+    ]
+  },
+  {
+    "question": "Which component in a traditional infrastructure device provides Layer 2 and Layer 3 functions to create data paths within a network?",
+    "answers": [
+      "control plane"
+    ]
+  },
+  {
+    "question": "Which network traffic management technology is a basic element in SDN implementations?",
+    "answers": [
+      "OpenFlow"
+    ]
+  },
+  {
+    "question": "Which type of hypervisor would most likely be used in a data center?",
+    "answers": [
+      "Type 1"
+    ]
+  },
+  {
+    "question": "Which is a characteristic of a Type 1 hypervisor?​",
+    "answers": [
+      "installed directly on a server​"
+    ]
+  },
+  {
+    "question": "Which two layers of the OSI model are associated with SDN network control plane functions that make forwarding decisions? (Choose two.)​",
+    "answers": [
+      "Layer 2",
+      "Layer 3"
+    ]
+  },
+  {
+    "question": "What pre-populates the FIB on Cisco devices that use CEF to process packets?",
+    "answers": [
+      "the routing table"
+    ]
+  },
+  {
+    "question": "What is a function of the data plane of a network device?",
+    "answers": [
+      "forwarding traffic flows"
+    ]
+  },
+  {
+    "question": "Which statement describes the concept of cloud computing?",
+    "answers": [
+      "separation of application from hardware"
+    ]
+  },
+  {
+    "question": "Which cloud model provides services for a specific organization or entity?",
+    "answers": [
+      "a private cloud"
+    ]
+  },
+  {
+    "question": "What two benefits are gained when an organization adopts cloud computing and virtualization? (Choose two.)",
+    "answers": [
+      "provides a “pay-as-you-go” model, allowing organizations to treat computing and storage expenses as a utility",
+      "enables rapid responses to increasing data volume requirements"
+    ]
+  },
+  {
+    "question": "Which type of Hypervisor is implemented when a user with a laptop running the Mac OS installs a Windows virtual OS instance?",
+    "answers": [
+      "type 2"
+    ]
+  },
+  {
+    "question": "A small company is considering moving many of its data center functions to the cloud. What are three advantages of this plan? (Choose three.)",
+    "answers": [
+      "The company only needs to pay for the amount of processing and storage capacity that it uses.",
+      "The company does not need to be concerned about how to handle increasing data storage and processing demands with in-house data center equipment.",
+      "The company can increase processing and storage capacity as needed and then decrease capacity when it is no longer needed."
+    ]
+  },
+  {
+    "question": "How does virtualization help with disaster recovery within a data center?",
+    "answers": [
+      "support of live migration"
+    ]
+  },
+  {
+    "question": "What technology allows users to access data anywhere and at any time?",
+    "answers": [
+      "Cloud computing"
+    ]
+  },
+  {
+    "question": "Which action takes place in the assurance element of the IBN model?",
+    "answers": [
+      "verification and corrective action"
+    ]
+  },
+  {
+    "question": "What is the function of the key contained in most RESTful APIs?",
+    "answers": [
+      "It is used to authenticate the requesting source."
+    ]
+  },
+  {
+    "question": "Which two configuration management tools are developed using Ruby? (Choose two.)",
+    "answers": [
+      "Puppet",
+      "Chef"
+    ]
+  },
+  {
+    "question": "Which term is used to describe a set of instructions for execution by the configuration management tool Puppet?",
+    "answers": [
+      "Manifest"
+    ]
+  },
+  {
+    "question": "Which term is used to describe a set of instructions for execution by the configuration management tool SaltStack?",
+    "answers": [
+      "Pillar"
+    ]
+  },
+  {
+    "question": "Which scenario describes the use of a public API?",
+    "answers": [
+      "It can be used with no restrictions."
+    ]
+  },
+  {
+    "question": "What is YAML?",
+    "answers": [
+      "It is a data format and superset of JSON."
+    ]
+  },
+  {
+    "question": "Which RESTFul operation corresponds to the HTTP GET method?",
+    "answers": [
+      "read"
+    ]
+  },
+  {
+    "question": "Which technology virtualizes the network control plane and moves it to a centralized controller?​",
+    "answers": [
+      "SDN"
+    ]
+  },
+  {
+    "question": "What are two functions of hypervisors? (Choose two.)",
+    "answers": [
+      "to manage virtual machines",
+      "to allocate physical system resources to virtual machines"
+    ]
+  },
+  {
+    "question": "What is a difference between the functions of Cloud computing and virtualization?",
+    "answers": [
+      "Cloud computing separates the application from the hardware whereas virtualization separates the OS from the underlying hardware."
+    ]
+  },
+  {
+    "question": "How is the YAML data format structure different from JSON?",
+    "answers": [
+      "It uses indentations."
+    ]
+  },
+  {
+    "question": "What is the most widely used API for web services?",
+    "answers": [
+      "REST"
+    ]
+  },
+  {
+    "question": "What is REST?",
+    "answers": [
+      "It is an architecture style for designing web service applications."
+    ]
+  },
+  {
+    "question": "What is a difference between the XML and HTML data formats?",
+    "answers": [
+      "XML does not use predefined tags whereas HTML does use predefined tags."
+    ]
+  },
+  {
+    "question": "To avoid purchasing new hardware, a company wants to take advantage of idle system resources and consolidate the number of servers while allowing for multiple operating systems on a single hardware platform. What service or technology would support this requirement?",
+    "answers": [
+      "virtualization"
+    ]
+  },
+  {
+    "question": "Which cloud computing opportunity would provide the use of network hardware such as routers and switches for a particular company?",
+    "answers": [
+      "infrastructure as a service (IaaS)"
+    ]
+  },
+  {
+    "question": "What component is considered the brains of the ACI architecture and translates application policies​?",
+    "answers": [
+      "the Application Policy Infrastructure Controller"
+    ]
+  },
+  {
+    "question": "Which statement describes the concept of cloud computing?",
+    "answers": [
+      "separation of application from hardware"
+    ]
+  },
+  {
+    "question": "In which situation would a partner API be appropriate?",
+    "answers": [
+      "a vacation service site interacting with hotel databases to display information from all the hotels on its web site"
+    ]
+  },
+  {
+    "question": "Because of enormous growth in web traffic, a company has planned to purchase additional servers to help handle the web traffic. What service or technology would support this requirement?",
+    "answers": [
+      "cloud services"
+    ]
+  },
+  {
+    "question": "ABCTech is investigating the use of automation for some of its products. In order to control and test these products, the programmers require Windows, Linux, and MAC OS on their computers. What service or technology would support this requirement?",
+    "answers": [
+      "virtualization"
+    ]
+  },
+  {
+    "question": "What are three components used in the query portion of a typical RESTful API request? (Choose three.)",
+    "answers": [
+      "format",
+      "parameters",
+      "key"
+    ]
+  },
+  {
+    "question": "A company has recently become multinational. Employees are working remotely, in different time zones, and they need access to company services from any place at any time. What service or technology would support this requirement?",
+    "answers": [
+      "cloud services"
+    ]
+  },
+  {
+    "question": "Following a multicontinent advertising campaign for a new product, a company finds its client database and volume of orders are overloading its on-site computer systems but the company does not have any room to expand. What service or technology would support this requirement?",
+    "answers": [
+      "cloud services"
+    ]
+  },
+  {
+    "question": "A network administrator has been tasked with creating a disaster recovery plan. As part of this plan, the administrator is looking for a backup site for all of the data on the company servers. What service or technology would support this requirement?",
+    "answers": [
+      "data center"
+    ]
+  },
+  {
+    "question": "Which is a requirement of a site-to-site VPN?",
+    "answers": [
+      "It requires a VPN gateway at each end of the tunnel to encrypt and decrypt traffic."
+    ]
+  },
+  {
+    "question": "Which statement describes an important characteristic of a site-to-site VPN?",
+    "answers": [
+      "It must be statically set up."
+    ]
+  },
+  {
+    "question": "Which protocol is attacked when a cybercriminal provides an invalid gateway in order to create a man-in-the-middle attack?",
+    "answers": [
+      "DHCP"
+    ]
+  },
+  {
+    "question": "In which TCP attack is the cybercriminal attempting to overwhelm a target host with half-open TCP connections?",
+    "answers": [
+      "SYN flood attack"
+    ]
+  },
+  {
+    "question": "Which statement describes a VPN?",
+    "answers": [
+      "VPNs use virtual connections to create a private network through a public network."
+    ]
+  }
+]
