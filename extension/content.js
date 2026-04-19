@@ -88,6 +88,26 @@ function levenshteinDistance(s1, s2) {
     return d[len1][len2];
 }
 
+function findMatchingQuestion(currentText) {
+    if (!currentText || currentText.length < 5) return null;
+    return examDatabase.find(item => {
+        // Teljes egyezés, vagy részleges beágyazódás
+        if (currentText.includes(item.question) || item.question.includes(currentText)) return true;
+        
+        // Hasonlóság (felemelve 0.75-re, mert nagyon laza volt a kis különbségekre)
+        const similarity = calculateSimilarity(currentText, item.question);
+        if (similarity > 0.75) return true;
+        
+        // Szavas egyezés: nem elég 4 közös szó (pl. 'what', 'are', 'two', 'benefits'), 
+        // a releváns szavak legalább 80%-ának egyeznie kell
+        const itemWords = item.question.split(' ').filter(word => word.length > 3);
+        const expectedWordCount = itemWords.length;
+        const matchingWordCount = itemWords.filter(word => currentText.includes(word)).length;
+        
+        return expectedWordCount > 0 && matchingWordCount / expectedWordCount >= 0.8;
+    });
+}
+
 // === DEBUG PANEL ===
 let debugQuestionCount = 0;
 
@@ -262,14 +282,7 @@ document.addEventListener('keydown', (e) => {
         const currentText = normalizeText(selectedText);
         if (isBlacklisted(selectedText)) return;
 
-        const match = examDatabase.find(item => {
-            const similarity = calculateSimilarity(currentText, item.question);
-            const hasInclusion = currentText.includes(item.question) || item.question.includes(currentText);
-            const wordMatches = item.question.split(' ').filter(word => word.length > 3 && currentText.includes(word)).length;
-            const isPartialMatch = wordMatches > 3;
-
-            return similarity > 0.65 || hasInclusion || isPartialMatch;
-        });
+        const match = findMatchingQuestion(currentText);
 
         if (match) {
             showStealthAnswer(match.answers.join(' | '));
@@ -390,14 +403,7 @@ function findQuestionsOnPage() {
         if (processedQuestions.has(currentText)) return;
 
         // Rugalmasabb keresés
-        const match = examDatabase.find(item => {
-            const similarity = calculateSimilarity(currentText, item.question);
-            const hasInclusion = currentText.includes(item.question) || item.question.includes(currentText);
-            const wordMatches = item.question.split(' ').filter(word => word.length > 3 && currentText.includes(word)).length;
-            const isPartialMatch = wordMatches > 3;
-
-            return similarity > 0.65 || hasInclusion || isPartialMatch;
-        });
+        const match = findMatchingQuestion(currentText);
 
         if (match) {
             let childMatches = Array.from(el.children).some(child => {
@@ -473,14 +479,7 @@ document.addEventListener('mouseup', () => {
     if (isBlacklisted(selectedText)) return;
 
     // Keresés az adatbázisban a kijelölt szöveg alapján
-    const match = examDatabase.find(item => {
-        const similarity = calculateSimilarity(currentText, item.question);
-        const hasInclusion = currentText.includes(item.question) || item.question.includes(currentText);
-        const wordMatches = item.question.split(' ').filter(word => word.length > 3 && currentText.includes(word)).length;
-        const isPartialMatch = wordMatches > 3;
-
-        return similarity > 0.65 || hasInclusion || isPartialMatch;
-    });
+    const match = findMatchingQuestion(currentText);
 
     if (match) {
         console.log(`✅ KIJELÖLÉS ALAPJÁN MEGTALÁLVA: ${selectedText.substring(0, 80)}`);
